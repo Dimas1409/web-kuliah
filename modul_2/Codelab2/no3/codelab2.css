@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+    
+}
+
+.h1 {
+    font-size: 10px;
+}
+.container {
+    padding: 60px 60px;
+    text-align: left;
+    background-color: green;
+    border-radius: 20px;
+}
+
+.nama{
+    padding: 5px 50px;
+}
+
+.email{
+    padding: 5px 50px;
+}
+
+.alamat{
+    padding: 20px 50px;
+}
+
+button{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+}

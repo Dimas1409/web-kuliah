@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Form</title>
+        <link rel="stylesheet" href="codelab2.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Form Pendaftaran</h1>
+            <form id="form-pendaftaran">
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama" Nama="nama" class="nama">
+                <span id="namaerror" class="error"></span>
+                <br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" Email="email" class="email">
+                <span id="emailerror" class="error"></span>
+                <br>
+                <label for="alamat">Alamat</label><br>
+                <input type="text" id="alamat" Alamat="alamat" class="alamat">
+                <span id="alamaterror" class="error"></span>
+
+                <div class="button">
+                    <button type="submit">Daftar</button>
+                </div>
+            </form>
+
+            <div class="hasil">
+                <p id="pesan" class="success"></p>
+            </div>
+        </div>
+
+        <script src="codelab2.js"></script>
+    </body>
+</html>

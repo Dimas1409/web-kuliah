@@ -1,0 +1,18 @@
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 2px solid black;
+}
+th{
+    background-color: yellow;
+}
+.Class1{
+    background-color: cyan;
+}
+td class2{
+    background-color: black;
+}
+td class3{
+    background-color: pink;
+}
