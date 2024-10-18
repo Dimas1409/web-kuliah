@@ -37,9 +37,5 @@ document.getElementById('form-pendaftaran').addEventListener('submit', function(
         isValid = false;
         alert('Alamat tidak boleh kosong')
     }
-
-    if (isValid) {
-        document.getElementById('pesan');
         alert('Pendaftaran berhasil')
-    }
 });
