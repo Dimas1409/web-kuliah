@@ -1,11 +1,17 @@
 const display = document.getElementById("user-input");
 const buttons = document.querySelectorAll(".buttons button");
-const specialChars = ["%", "*", "/", "-", "+", "="];
+const specialChars = ["%", "*", "/", "-", "+", "=", "^"];
 let output = "";
 
 const calculate = (btnValue) => {
     if (btnValue === "=" && output !== "") {
-        output = eval(output.replace("%", "/100"));
+        if (output.includes("^")) {
+            let [base, exponent] = output.split("^");
+            output = Math.pow(base, exponent).toString();
+        } else if (output.includes ("%")){
+            let [num1, num2] = output.split("%");
+            output = (parseFloat(num1) % parseFloat(num2)).toString();
+        }
     } else if (btnValue === "AC") {
         output = "";
     } else if (btnValue === "DEL") {
