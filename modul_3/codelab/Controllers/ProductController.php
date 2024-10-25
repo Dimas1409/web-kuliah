@@ -25,7 +25,7 @@ class ProductController extends Controller{
 
         $response = [
             "controller_attribute" => $this->getControllerAttribute(),
-            "product" => $this-> $dummyData
+            "product" => $dummyData
         ];
         
         return $this->responseFormatter(200, "Success", $response);
